@@ -1,2 +1,2 @@
 targetScope = 'subscription'
-output test string = 'Deployment working'
+output test string = 'Deployment working' 
