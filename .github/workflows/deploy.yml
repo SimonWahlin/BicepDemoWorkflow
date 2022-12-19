@@ -14,9 +14,10 @@ jobs:
         continue-on-error: true
       
       # This action will restore bicep from cache or install if not found in cache
+      # Settings bicepversion is optional, default is latest
       - uses: SimonWahlin/AzCliBicepSetup@v1
         with:
-          bicepversion: v0.12.40 # Optional, default is latest
+          bicepversion: v0.12.40
       
       # This step shows that bicep is now installed
       - shell: bash
