@@ -37,4 +37,7 @@ jobs:
         shell: bash
         run: |
           az bicep version
-          az deployment sub create --location westeurope --template-file main.bicep
+          for i in {1..100}; do
+            echo "Deployment number: ${i}"
+            az deployment sub create --location westeurope --template-file main.bicep
+          done
